@@ -1,0 +1,242 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #e8921b;
+}
+
+/* Side Navigation */
+
+.side-nav {
+    width: 250px;
+    background-color: #083588;
+    color: #ecf0f1;
+    padding: 30px 0;
+    text-align: center;
+    position: fixed;
+    height: 100%;
+}
+
+.side-nav .profile {
+    margin-bottom: 30px;
+}
+
+.side-nav .profile img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    border: 3px solid #ecf0f1;
+}
+
+.side-nav h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.side-nav p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #f7f8f9;
+}
+
+.side-nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.side-nav ul li {
+    margin: 10px 5px;
+}
+
+.side-nav ul li a {
+    color: #ecf0f1;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    display: block;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.side-nav ul li a:hover {
+    background-color: #0a3e72;
+    border-radius: 5px;
+}
+
+/* Main Content */
+
+
+.main-content {
+    margin-left: 250px;
+    padding: 40px;
+    background-color: #aec0f7;
+    width: calc(100% - 250px);
+    overflow-y: auto;
+}
+
+header {
+    background-color: #083588;
+    color: white;
+    padding: 80px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+section {
+    margin: 100px 0;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #171717;
+    text-align: center;
+}
+
+p {
+    font-size: 1.1rem;
+    color: #01000e;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+ul li {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin: 10px;
+    font-size: 1.1rem;
+}
+
+/* Education Section (Modern Design with Three Items) */
+#education {
+    padding: 40px;
+    background-color:#c4d6fd;
+    border-left: 4px solid #0b1e67;
+}
+
+#education h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    color:#01000e
+}
+
+.education-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.education-item {
+    background-color: #c4ddff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.education-item .year {
+    font-size: 18px;
+    font-weight: bold;
+    color: #0f0d0d;
+    margin-bottom: 8px;
+}
+
+.education-item .degree {
+    font-size: 20px;
+    font-weight: bold;
+    color: #043c85;
+    margin-bottom: 5px;
+}
+
+.education-item .Marks {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.education-item .institution {
+    font-size: 16px;
+    color: #043c85;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .education-wrapper {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+.project {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.project h3 {
+    font-size: 1.6rem;
+    color: #043c85;
+    margin-bottom: 10px;
+}
+
+.project p {
+    text-align: left;
+    padding: 15px;
+    background: #c4d6fd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #083588;
+   
+    margin-top: 50px;
+}
+
+
+
+footer p{
+    color: white;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+    .side-nav {
+        width: 200px;
+    }
+
+    .main-content {
+        margin-left: 200px;
+        width: calc(100% - 200px);
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+}
